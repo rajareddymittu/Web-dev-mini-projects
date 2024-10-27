@@ -1,0 +1,41 @@
+<!-- this is a document for SIP calculations for indian stock market -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP calculator</title>
+    <!-- add styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- add bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- add js -->
+    <script src="script.js"></script>
+</head>
+ <body>
+    <form class="form">
+        <h1> SIP Calculator</h1>
+        <div class="mb-3">
+          <label for="inputAmount" class="form-label">Montly Investment</label>
+          <!-- should have both drag and number -->
+            <input type="range" class="form-range" id="inputAmountByRange" value="20000" min="500" max="50000" step="100" >
+            <input type="number" class="form-control" value="20000" id="inputAmountByValue">
+            
+        </div>
+        <div class="mb-3">
+            <label for="InterestRate" class="form-label">Expected Annual Returns</label>
+            <input type="range" class="form-range" id="inputInterestRateByRange" value="12" min="0" max="20" step="0.1">
+            <input type="number" class="form-control" value="12" id="inputInterestRateByValue">
+        </div>
+        <div class="mb-3">
+            <label for="inputYears" class="form-label">Investment Period (Years)</label>
+            <input type="range" class="form-range" id="inputYearsByRange" value="5" min="1" max="30" step="1">
+            <input type="number" class="form-control" value="5" id="inputYearsByValue">
+        </div>
+        <div class="mb-3">
+            <label for="inputAmount" class="form-label">Total Investment</label>
+            <input type="text" class="form-control" id="totalInvestment" disabled>
+        </div>
+      </form>
+ </body>
+ </html>
